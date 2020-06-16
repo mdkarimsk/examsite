@@ -1,0 +1,418 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif,verdana;
+}
+
+.header{
+	color: red;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+}
+
+
+
+.nav-container{
+	width: 100%;
+}
+
+
+
+.navbar{
+	background-color: rgba(0,0,0,0.4);
+	overflow: hidden;
+
+}
+
+.navbar a{
+	float: left;
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 8px 10px;
+	text-decoration: none;
+	font-size: 17px;
+	width: 16.66%;
+}
+
+
+
+.navbar a:hover{
+	background-color:rgba(0,0,0,0.6);
+	transition: 0.3s;
+}
+
+.navbar .icon{
+	display: none;
+}
+
+
+
+.image-back{
+	position: relative; 
+	margin-top: 0px;
+	background: url("backimage2.jpg");
+	min-height: 800px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%; 
+	}
+
+marquee{
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+	padding: 20px;
+}	
+
+.content-container{
+	position: absolute;
+	margin-left: 30%;
+}
+
+ .square{
+	list-style-type: square;
+	padding: 20px 40px;
+	list-style-position: inside;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px 20px;
+	border: 1px solid #0000CC ;
+}
+
+.square lh{
+	padding-bottom: 20px;
+}
+
+.square lh p{
+	font-size: 25px;
+	font-style: italic;
+	color: #0066FF ;
+	text-shadow: 2px 2px #0000CC;
+}
+
+.square li{
+	padding-bottom: 10px;
+}
+.square li a{
+	font-size: 17px;
+	font-style: italic;
+	color: #00FF33 ;
+	text-decoration: none;
+	padding-bottom: 10px;
+}
+
+
+.square li a:hover{
+	color: #CC0066  ;
+}
+
+
+.section-b{
+	margin-left: 
+	padding: 30px;
+	background-color:black;
+}
+
+
+@media screen and (max-width: 600px){
+	.navbar a:not(:first-child){display: none;}
+
+.navbar a.icon{
+		float: right;
+		display: block;
+	}
+
+
+	.content-container{
+		margin-left: 20px;
+	}
+
+	.square{
+		padding: 5px;
+		border-radius: 10px;
+	}
+}
+
+
+
+.accordion{
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	width: 100%;
+	font-size: 17px;
+	text-align: left;
+	border: none;
+	outline: none;
+	border-top: 2px groove black; 
+}
+
+.active, .accordion:hover{
+	background-color: red;
+	transition: 0.5s;
+}
+
+
+.panel{
+	padding: ;
+	background-color: black;
+	display: none;
+	overflow: hidden;
+}
+
+.panel ul li {
+	margin-right: 30%;
+	margin-left: 80px;
+	padding-bottom: 15px;
+
+}
+
+.panel ul lh{
+	margin-left: 20px;
+	color: green;
+	font-size: 20px;
+}
+
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.footer-cotainer{
+	background-image: linear-gradient(-45deg,#ff0066,#cc0099);
+}
+
+.footer{
+	float: left;
+	padding: 20px;
+}
+
+.footer.side{
+	width: 50%;
+	text-align: left;
+}
+
+.footer-cotainer:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer ul{
+	list-style-position: outside;
+}
+
+.footer ul li{
+	padding-bottom: 10px;
+
+}
+
+
+
+@media screen and (max-width: 700px){
+	.navbar.responsive{
+		position: relative;
+	}
+
+	.navbar.responsive .icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.navbar.responsive a{
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+	.footer.side{
+	width: 100%;
+	text-align: left;
+}
+
+}
+
+
+
+
+/* for registration form*/
+
+.background-img{
+	background-image: url("img1.jpg");
+	min-height: 1950px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	
+
+}
+
+
+
+.form-box{
+	position: absolute;
+	margin: 0 25%;
+	width:50%;
+	padding: 0 40px 20px 40px;
+	box-sizing: border-box;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.60);
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+
+
+}
+
+
+.form-header{
+	text-align: center;
+}
+
+.form-box input[type="text"] , .form-box input[type="email"]{
+	width: 100%;
+	padding: 10px 0 0 0;
+	margin:50px 0 10px 0 ; 
+	font-size: 17px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid blue;
+	background: transparent;
+	color: white;
+}
+.form-box input[type="date"]{
+	width: 200px;
+	margin: 10px 0px 20px 0;
+	transform: translateY(-5px);
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	font-size: 17px;
+	border-bottom: 1px solid blue;
+	cursor: pointer;
+	background: transparent;
+	color: white;
+}
+
+
+.form-box input[type="submit"]{
+	position: absolute;
+	top: 25px;
+	left: 40%;
+	margin-bottom: 40px;
+	padding: 10px 20px 10px 20px; 
+	border-radius: 10px;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0,0.5);
+	cursor: pointer;
+	font-weight: bold;
+	color: white;
+
+	
+}
+
+.file-upload{
+	margin: 40px 0 5px 0;
+}
+
+.form-box input[type="file"]{
+	margin-left: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+
+
+
+.form-box form div{
+	position: relative;
+}
+
+.form-box form div label{
+	position: absolute;
+	left: 0;
+	top: 65px;
+	pointer-events: none;
+	
+}
+
+div.inline_display{
+	margin-bottom: 40px;
+}
+
+div.inline_display,.inline_display p{
+	display: inline;
+}
+
+.form-box input[type="radio"]{
+	height: 15px;
+	width: 15px;
+	padding-left: 20px;
+}
+
+
+.form-box input[type="text"]:focus ~ label, 
+.form-box input[type="email"]:focus ~ label,
+.form-box input[type="text"]:valid ~ label, 
+.form-box input[type="email"]:valid ~ label{
+	transform: translateY(-35px);
+	transition: 0.65s;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 650px){
+	.form-box{
+	position: absolute;
+	margin: 0;
+	width:100%;
+	padding: 0 40px 10px 40px;
+	box-sizing: border-box;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.45);	
+}
+
+form{
+ 	
+ }
+
+
+ .form-box input[type="text"]:focus ~ label, 
+.form-box input[type="email"]:focus ~ label,
+.form-box input[type="text"]:valid ~ label, 
+.form-box input[type="email"]:valid ~ label{
+	transform: translateY(-35px);
+	transition: 0.65s;
+	font-size: 17px;
+	font-weight: normal;
+}
+
+}
+
+/*end of registration form*/
+
+
+
+ 
+   
